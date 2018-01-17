@@ -24,13 +24,16 @@
     width:70%;
     padding-left: 15%;
     padding-right: 15%;
-    border-bottom: 3px solid #E3E3E3;
 }
 
 .topic{
+    padding-bottom: 10%;
     margin-bottom: 10%;
     line-height: 1.7em;
     font-family: 'Open Sans', sans-serif;
+}
+.topic:not(:last-child){
+    border-bottom: 1.5px solid #C7CFD9;
 }
 
 
