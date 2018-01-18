@@ -26,5 +26,11 @@ $(function () {
             $("#topic-wrapper")
                 .append($(html));
         }
+
+        $(".read-all-btn").click(function () {
+            var $articleName = $(this).siblings(".title").children(".article-name").text();
+            window.location.href = '/dispatcher?articleName=' + $articleName.trim().split(' ').join('_');
+        });
+
     });
 });
